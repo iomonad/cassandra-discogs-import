@@ -35,12 +35,15 @@ while ($reader->read) {
 	my $realname = $artist->findvalue('./realname');
 	my $data_quality = $artist->findvalue('./data_quality');
 
-	# my $urls = $artist->findnodes('.//urls')->to_literal_list();
-	# my @namevars = ();
-	# my @name_aliases = ();
+	my $_urls = $artist->findnodes('//urls')->to_literal();
+	my @urls = grep /\S/, split /^/m, $_urls;
+	my $_nvars = $artist->findnodes('//namevariations')->to_literal();
+	my @nvars = grep /\S/, split /^/m, $_nvars;
+	my $_nalias = $artist->findnodes('//aliases')->to_literal();
+	my @nalias = grep /\S/, split /^/m, $_nvars;
 
-	$client->execute("INSERT INTO artists (id, name, realname) VALUES (?, ?, ?) USING TTL ?",
-			 [$id, $name, $realname, 86400 ], { consistency => "quorum" });
+	$client->execute("INSERT INTO artists (id, name, realname, data_quality, urls, name_variation) VALUES (?, ?, ?, ?, ?, ?) USING TTL ?",
+			 [$id, $name, $realname, $data_quality, @urls, @nvars, 86400 ], { consistency => "quorum" });
 }
 
-$client->disconnect;
+$client->shutdown();
