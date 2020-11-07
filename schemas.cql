@@ -1,7 +1,5 @@
 -- artists.xml
 
-USE KEYSPACE discogs;
-
 CREATE TABLE artists (
        id BIGINT PRIMARY KEY,
        name TEXT,
