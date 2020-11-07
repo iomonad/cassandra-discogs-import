@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<release id="1" status="Accepted">
+   <images>
+      <image type="primary" uri="" uri150="" width="600" height="600" />
+      <image type="secondary" uri="" uri150="" width="600" height="600" />
+      <image type="secondary" uri="" uri150="" width="600" height="600" />
+      <image type="secondary" uri="" uri150="" width="600" height="600" />
+   </images>
+   <artists>
+      <artist>
+         <id>1</id>
+         <name>The Persuader</name>
+         <anv />
+         <join />
+         <role />
+         <tracks />
+      </artist>
+   </artists>
+   <title>Stockholm</title>
+   <labels>
+      <label name="Svek" catno="SK032" id="5" />
+   </labels>
+   <extraartists>
+      <artist>
+         <id>239</id>
+         <name>Jesper Dahlbäck</name>
+         <anv />
+         <join />
+         <role>Music By [All Tracks By]</role>
+         <tracks />
+      </artist>
+   </extraartists>
+   <formats>
+      <format name="Vinyl" qty="2" text="">
+         <descriptions>
+            <description>12"</description>
+            <description>33 ⅓ RPM</description>
+         </descriptions>
+      </format>
+   </formats>
+   <genres>
+      <genre>Electronic</genre>
+   </genres>
+   <styles>
+      <style>Deep House</style>
+   </styles>
+   <country>Sweden</country>
+   <released>1999-03-00</released>
+   <notes>The song titles are the names of six of Stockholm's 82 districts.
+
+Title on label: - Stockholm -
+
+Recorded at the Globe Studio, Stockholm
+
+FAX: +46 8 679 64 53</notes>
+   <data_quality>Needs Vote</data_quality>
+   <master_id is_main_release="true">1660109</master_id>
+   <tracklist>
+      <track>
+         <position>A</position>
+         <title>Östermalm</title>
+         <duration>4:45</duration>
+      </track>
+      <track>
+         <position>B1</position>
+         <title>Vasastaden</title>
+         <duration>6:11</duration>
+      </track>
+      <track>
+         <position>B2</position>
+         <title>Kungsholmen</title>
+         <duration>2:49</duration>
+      </track>
+      <track>
+         <position>C1</position>
+         <title>Södermalm</title>
+         <duration>5:38</duration>
+      </track>
+      <track>
+         <position>C2</position>
+         <title>Norrmalm</title>
+         <duration>4:52</duration>
+      </track>
+      <track>
+         <position>D</position>
+         <title>Gamla Stan</title>
+         <duration>5:16</duration>
+      </track>
+   </tracklist>
+   <identifiers>
+      <identifier type="Matrix / Runout" description="A-Side Runout" value="MPO SK 032 A1" />
+      <identifier type="Matrix / Runout" description="B-Side Runout" value="MPO SK 032 B1" />
+      <identifier type="Matrix / Runout" description="C-Side Runout" value="MPO SK 032 C1" />
+      <identifier type="Matrix / Runout" description="D-Side Runout" value="MPO SK 032 D1" />
+      <identifier type="Matrix / Runout" description="Only On A-Side Runout" value="G PHRUPMASTERGENERAL T27 LONDON" />
+   </identifiers>
+</release>
